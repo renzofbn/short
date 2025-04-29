@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <header className="border-b-4 border-border sticky px-4">
-      <nav className="flex items-center justify-between my-4">
+    <header className="border-b-4 border-border sticky px-4 bg-[#d4eaf7]">
+      <nav className="flex items-center justify-between py-4">
         <Link href="/" className="text-xl font-bold">
           Short
         </Link>
@@ -23,8 +23,11 @@ export default function Header() {
               </svg>
             </Button>
           </Link>
-          <Link href="/shorten">
-            <Button className="font-bold text-xl">Get Started</Button>
+          <Link href="/login">
+            <Button className="font-bold text-xl">Log In</Button>
+          </Link>
+          <Link href="/signup">
+            <Button className="font-bold text-xl">Sign Up</Button>
           </Link>
         </div>
       </nav>
